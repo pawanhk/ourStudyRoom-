@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "ourStudyRoom",
+    "version": "1.0",
+    "description": "Study together with your friends!",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png"
+    },
+    "action": {
+        "default_popup": "src/index.html"
+    },
+    "permissions": [
+        "scripting",
+        "storage",
+        "activeTab"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    }
+}
