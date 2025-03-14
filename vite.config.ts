@@ -7,6 +7,7 @@ export default defineConfig({
   build:{
     rollupOptions:{
       input:{
+        css: resolve(__dirname,"src/index.scss"),
         popup: resolve(__dirname, "src/index.html"),
         background: resolve(__dirname, "src/background.ts"),
         popupScript: resolve(__dirname, "src/popup.ts")

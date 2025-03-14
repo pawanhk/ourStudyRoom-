@@ -3,16 +3,42 @@
     <title> ourStudyRoom </title>
     <script src="../popupScript.js" defer></script>
 </head>
+
+<link rel="stylesheet" href="index.scss" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
 <body>
-    <h1> ourStudyRoom v1.0.0 </h1>
-    <h3> Create A Room </h3> 
-    <button id="createRoom"> Host a Room </button> <br/>
+    <div class="container">
+        <h1> OUR</h1>
+        <h1> STUDY ROOM</h1>
 
-    <h3> Join A Room </h3> 
-    <input type="text" id="roomCode" placeholder="Enter the code"/><br/><br/>
-    <button id="joinRoom"> Join Room </button>
+        <div class="controls">
+            <button id="createRoom"> Host A Session </button>
+            <input type="text" id="roomCode" placeholder="CODE"/> <button id="joinRoom"> Join </button>
+        </div>
 
-    <p id="status"> STATUS: waiting for user input ...  </p>
+        <div class="room-info">
+            <h3> CODE: <span id="host-name"> XXXXXX </span> </h3> 
+            <h3> MY##: <span id="room-code"> HOST-XXXX </span> </h3> 
+        </div>
+
+        <div class="timer">
+            <div class="box">
+                <h3> Clock </h3> 
+                <button id="set-up"> + </button> 
+                <button id="set-down"> - </button>
+                <button id="start-timer"> Start <button>
+            </div>
+            <h3 id="my-timer"> 00 : 00 : 00 </h3>
+
+            <div id="all-timers"></div>
+        </div>
+
+
+        <p id="status"> STATUS: waiting for user input ...  </p> 
+    </div>
 
 </body>
 </html>

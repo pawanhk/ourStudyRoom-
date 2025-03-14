@@ -64,7 +64,7 @@ async function joinRoom(roomCode:string,username:string,sendResponse: (response:
 
 
 // keep checking if an update has been detected
-function roomUpdate(roomCode: string) {
+function roomUpdate(roomCode: string){
     const roomRef = doc(db, "rooms", roomCode);
     onSnapshot(roomRef, (snapshot) =>{
         if (snapshot.exists()){
@@ -79,3 +79,5 @@ function roomUpdate(roomCode: string) {
         }
     });
 }
+
+// TIMER STUFF FOES HERE 
