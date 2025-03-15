@@ -79,5 +79,3 @@ function roomUpdate(roomCode: string){
         }
     });
 }
-
-// TIMER STUFF FOES HERE 

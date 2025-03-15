@@ -76,17 +76,18 @@ body{
     background-color: #6BED7E;
     padding-top: 2px !important;
     padding-bottom: 2px !important;
-    padding-right: 10px !important;
+    padding-right: 2px !important;
     padding-left: 3px;
 
     .box{
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 3px;
     }
 
+
     h3{
-      font-size: 25px;
+      font-size: 23px;
       font-family: "Bungee", sans-serif;
       margin-bottom: 0px !important;
       padding-bottom: 0px !important;
@@ -99,7 +100,20 @@ body{
       background-color: black;
       border: none;
       font-family: "Bungee", sans-serif;
-      font-size: 15px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .tcon{
+      margin-left: 5px !important;
+
+      button{
+        font-size: 18px !important;
+        padding: 4px;
+        background-color: #6BED7E;
+        border: none;
+        cursor: pointer;
+      }
     }
   }
 
